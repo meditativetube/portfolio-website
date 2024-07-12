@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementsByClassName("nav");
@@ -10,3 +11,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+=======
+
+>>>>>>> 72aa75d1269e20454493050b8b18c0937c302403
