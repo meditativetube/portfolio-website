@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -108,3 +109,114 @@ body{
         transform: scale(1);
     }
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    font-family: poppins,sans-serif;
+    width: 1300px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    font:18px poppins,sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#logo{
+    background-image: url(logo.png);
+    background-size:cover;
+    width: 100px;
+    height: 80px;
+}
+.nav #menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+}
+.nav #menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: .2s;
+}
+.nav #menu ul li a:hover{
+    color: #8053fd;
+}
+
+/* container */
+.fst_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: none;
+    color: #ffffff;
+    padding: 100px 0;
+}
+.fst_container #name h1{
+    font:112px "Be vietnam pro",sans-serif;
+    line-height: 1em;
+    letter-spacing: -6px;
+}
+.fst_container #name h2{
+    font: 112px "Playfair Display",sans-serif;
+    font-style: italic;
+}
+.fst_container .imgcntr{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.fst_container .imgcntr #pro_image{
+    background-image: url(photo.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+}
+.fst_container .imgcntr #probtn{
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 50px;
+    height: auto;
+}
+.fst_container .imgcntr #probtn button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font: 24px poppins,sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.425);
+    transition: 1s;
+}
+.fst_container .imgcntr #probtn button:hover{
+    background-color: #073655;
+    color: #ffffff;
+    animation: pulse .5s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
