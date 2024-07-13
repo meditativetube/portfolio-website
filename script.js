@@ -1,16 +1,11 @@
-<<<<<<< HEAD
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementsByClassName("nav");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-=======
-
->>>>>>> 72aa75d1269e20454493050b8b18c0937c302403
+const aboutLink = document.querySelector('.scnd_lnk a[href="#about"]');
+        
+        // Add a click event listener to the About link
+        aboutLink.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default anchor click behavior
+            
+            // Scroll to the About section smoothly
+            document.querySelector('#about').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
